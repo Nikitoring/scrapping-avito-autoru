@@ -1,0 +1,9 @@
+{
+  "name": "avito-autoru-scrapping",
+  "version": "1.0.0",
+  "description": "scrapping cars from avito and auto.ru",
+  "main": "index.js",
+  "repository": "https://github.com/Nikitoring/scrapping-avito-autoru",
+  "author": "Nikitoring",
+  "license": "MIT"
+}

@@ -5,5 +5,37 @@
   "main": "index.js",
   "repository": "https://github.com/Nikitoring/scrapping-avito-autoru",
   "author": "Nikitoring",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon --exec babel-node 'index.js'",
+    "start": "node index.js"
+  },
+  "type": "module",
+  "exports": {
+    "require": "./index.js",
+    "import": "./esm/wrapper.js"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.6",
+    "@babel/register": "^7.14.5",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.10",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "puppeteer": "^10.0.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.5",
+    "nodemon": "^2.0.6"
+  }
 }
